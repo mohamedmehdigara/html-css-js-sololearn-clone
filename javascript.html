@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnToCode - Learn Javascript Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>LearnToCode</h1>
+  </header>
+
+  <main>
+    <h2>Learn Javascript Basics</h2>
+    <p>This page introduces fundamental concepts of Javascript, a popular programming language for web development.</p>
+    <section class="content">
+      <h3>Variables and Data Types</h3>
+      <p>Javascript variables store information. You can declare them using `var`, `let`, or `const` keywords, followed by a name and an optional value.</p>
+      <pre>
+        var age = 25;  // Numeric data type
+        let name = "John";  // String data type
+        const PI = 3.14;  // Constant value (unchangeable)
+      </pre>
+      <h3>Operators</h3>
+      <p>Javascript provides operators for performing calculations and comparisons.</p>
+      <pre>
+        let x = 10 + 5;  // Addition
+        let y = "Hello" + " World";  // String concatenation
+        if (x > y) {  // Comparison
+          console.log("This won't print!");
+        }
+      </pre>
+      <h3>Control Flow</h3>
+      <p>Control flow statements determine how your code executes.</p>
+      <pre>
+        for (let i = 0; i < 5; i++) {
+          console.log("Iteration:", i);
+        }
+
+        function greet(name) {
+          console.log("Hello, " + name + "!");
+        }
+        greet("Alice");
+      </pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
