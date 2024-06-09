@@ -25,3 +25,19 @@ navLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+
+
+const categoryLinks = document.querySelectorAll('.course-categories li a');
+
+categoryLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default link behavior
+
+    const parentLi = this.parentElement;
+    const subCategories = parentLi.querySelector('.sub-categories');
+
+    // Toggle active class and subcategories visibility
+    parentLi.classList.toggle('active');
+    subCategories.classList.toggle('active');
+  });
+});

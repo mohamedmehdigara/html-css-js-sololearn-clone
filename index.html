@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnToCode</title>
+  <title>LearnToCode - HTML Course</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,33 +12,69 @@
   </header>
 
   <main>
-    <section class="courses">
-      <h2>Courses</h2>
-      <nav>
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="html.html">HTML</a></li>
-          <li><a href="javascript.html">Javascript</a></li>
-          <li><a href="python.html">Python</a></li>
-        </ul>
-      </nav>
-      
+    <section class="course-categories">
+      <h2>Course Categories</h2>
+      <ul>
+        <li>
+          <a href="#">Web Development</a>
+          <ul class="sub-categories">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Programming Fundamentals</a>
+          <ul class="sub-categories">
+            <li><a href="python.html">Python</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">C++</a></li>
+          </ul>
+        </li>
       </ul>
     </section>
 
-    <section class="lesson">
-      <h2>Lesson Title</h2>
+    <section class="course-content">
+      <h2>HTML Course</h2>
+
+      <ul class="course-progress">
+        <li class="completed">
+          <a href="#">Introduction</a>
+        </li>
+        <li>
+          <a href="#">Elements & Tags</a>
+        </li>
+        <li>
+          <a href="#">Attributes & Values</a>
+        </li>
+        <li>
+          <a href="#">Formatting & Styling</a>
+        </li>
+      </ul>
+
       <div class="lesson-content">
-        <p>This is a sample lesson explaining a basic concept.</p>
+        <h3>Introduction to HTML</h3>
+        <p>This lesson covers the basics of HTML...</p>
       </div>
-      <div class="code-editor">
-        <pre>
-          console.log("Hello, World!");
-        </pre>
-      </div>
+
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script>
+  const categoryLinks = document.querySelectorAll('.course-categories li a');
+
+  categoryLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default link behavior
+
+      const parentLi = this.parentElement;
+      const subCategories = parentLi.querySelector('.sub-categories');
+
+      // Toggle active class and subcategories visibility
+      parentLi.classList.toggle('active');
+      subCategories.classList.toggle('active');
+    });
+  });
+  </script>
 </body>
 </html>
