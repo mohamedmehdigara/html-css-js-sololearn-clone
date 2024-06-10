@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>LearnToCode</h1>
-    <a href="../index.html">Home</a>
+    <a href="./index.html">Home</a>
   </header>
 
   <main>
@@ -23,7 +23,7 @@
     <section class="content">
       <h3>HTML Structure</h3>
       <p>The basic structure of an HTML document consists of a DOCTYPE declaration, an `<html>` element, and a `<head>` and `<body>` section within the `<html>` element.</p>
-      <pre>
+      <pre class="code-snippet">
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
           &lt;head&gt;
@@ -46,9 +46,35 @@
         <li><h3>This is an H3 heading</h3></li>
       </ul>
       <p>This is an example paragraph containing some content.</p>
+
+      <div class="code-editor-placeholder">
+        <h3>Write and Run HTML Code (Code Editor Placeholder)</h3>
+        </div>
+
+      <h3>Test Your Knowledge (Quiz)</h3>
+      <ul class="quiz">
+        <li>
+          <p>What is the correct DOCTYPE declaration for an HTML document?</p>
+          <ul>
+            <li><input type="radio" name="q1" value="a"> &lt;doctype html&gt;</li>
+            <li><input type="radio" name="q1" value="b"> &lt;!DOCTYPE html&gt; (Correct)</li>
+            <li><input type="radio" name="q1" value="c"> &lt;html doctype&gt;</li>
+          </ul>
+        </li>
+        <li>
+          <p>Which element defines the title of a web page?</p>
+          <ul>
+            <li><input type="radio" name="q2" value="a"> &lt;body&gt;</li>
+            <li><input type="radio" name="q2" value="b"> &lt;title&gt; (Correct)</li>
+            <li><input type="radio" name="q2" value="c"> &lt;head&gt;</li>
+          </ul>
+        </li>
+        </ul>
+      <button id="check-answers">Check Answers</button>
+
     </section>
 
-    </main>
+  </main>
 
   <script src="script.js"></script>
 </body>
