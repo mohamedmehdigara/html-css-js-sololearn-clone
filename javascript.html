@@ -10,7 +10,6 @@
   <header>
     <h1>LearnToCode</h1>
     <a href="./index.html">Home</a>
-
   </header>
 
   <main>
@@ -20,19 +19,21 @@
       <h3>Variables and Data Types</h3>
       <p>Javascript variables store information. You can declare them using `var`, `let`, or `const` keywords, followed by a name and an optional value.</p>
       <pre>
-        var age = 25;  // Numeric data type
-        let name = "John";  // String data type
-        const PI = 3.14;  // Constant value (unchangeable)
+        var age = 25; // Numeric data type
+        let name = "John"; // String data type
+        const PI = 3.14; // Constant value (unchangeable)
       </pre>
+
       <h3>Operators</h3>
       <p>Javascript provides operators for performing calculations and comparisons.</p>
       <pre>
-        let x = 10 + 5;  // Addition
-        let y = "Hello" + " World";  // String concatenation
-        if (x > y) {  // Comparison
+        let x = 10 + 5; // Addition
+        let y = "Hello" + " World"; // String concatenation
+        if (x > y) { // Comparison
           console.log("This won't print!");
         }
       </pre>
+
       <h3>Control Flow</h3>
       <p>Control flow statements determine how your code executes.</p>
       <pre>
@@ -45,6 +46,39 @@
         }
         greet("Alice");
       </pre>
+
+      <div class="code-editor-placeholder">
+        <h3>Write and Run Javascript Code (Code Editor Placeholder)</h3>
+      </div>
+
+      <h3>Test Your Knowledge (Quiz)</h3>
+      <ul class="quiz">
+        <li>
+          <p>What keyword is used to declare a constant variable in Javascript?</p>
+          <ul>
+            <li><input type="radio" name="q1" value="a"> var</li>
+            <li><input type="radio" name="q1" value="b"> let</li>
+            <li><input type="radio" name="q1" value="c"> const (Correct)</li>
+          </ul>
+        </li>
+        <li>
+          <p>What is the result of the expression `10 + "5"` in Javascript?</p>
+          <ul>
+            <li><input type="radio" name="q2" value="a"> 15 (Correct)</li>
+            <li><input type="radio" name="q2" value="b"> "105"</li>
+            <li><input type="radio" name="q2" value="c"> Error</li>
+          </ul>
+        </li>
+        <li>
+          <p>What does the following loop do?  `for (let i = 0; i < 3; i++) { console.log(i); }`</p>
+          <ul>
+            <li><input type="radio" name="q3" value="a"> Prints numbers from 1 to 3</li>
+            <li><input type="radio" name="q3" value="b"> Prints the value of i 3 times (Correct)</li>
+            <li><input type="radio" name="q3" value="c"> Infinite loop</li>
+          </ul>
+        </li>
+      </ul>
+      <button id="check-answers">Check Answers</button>
     </section>
   </main>
 
