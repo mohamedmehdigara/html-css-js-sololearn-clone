@@ -1,107 +1,108 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  header {
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .courses {
-    margin-bottom: 20px;
-  }
-  
-  .courses ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .courses li {
-    margin-bottom: 10px;
-  }
-  
-  .lesson {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .lesson-content {
-    margin-bottom: 10px;
-  }
-  
-  .code-editor {
-    background-color: #eee;
-    padding: 10px;
-    font-family: monospace;
-  }
-  
-  /* Additional styling for course pages */
-  
-  main {
-    max-width: 800px;
-    margin: 0 auto;  /* Center the content horizontally */
-  }
-  
-  h2 {
-    margin-bottom: 15px;
-  }
-  
-  .content {
-    margin-top: 20px;
-  }
-  
-  .content h3 {
-    margin-bottom: 5px;
-  }
-  
-  pre {
-    background-color: #fafafa;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-  }
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-  nav {
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav li a:hover {
-    color: #000;
-    font-weight: bold;
-  }
-  
-  /* Add styling for active link (optional) */
-  
-  nav li.active a {
-    color: #fff;
-    background-color: #007bff;
-  }
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
 
-  /* Course Category Menu Styles (from previous explanation) */
+h1 {
+  text-align: center;
+}
+
+.courses { /* Remove unused class */
+  margin-bottom: 20px;
+}
+
+.courses ul { /* Remove unused class */
+  list-style: none;
+  padding: 0;
+}
+
+.courses li { /* Remove unused class */
+  margin-bottom: 10px;
+}
+
+.lesson {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.lesson-content {
+  margin-bottom: 10px;
+}
+
+.code-editor {
+  background-color: #eee;
+  padding: 10px;
+  font-family: monospace;
+}
+
+/* Additional styling for course pages */
+
+main {
+  max-width: 800px;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.content { /* Remove unused class */
+  margin-top: 20px;
+}
+
+.content h3 { /* Remove unused class */
+  margin-bottom: 5px;
+}
+
+pre {
+  background-color: #fafafa;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+nav {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Add styling for active link (optional) */
+
+nav li.active a {
+  color: #fff;
+  background-color: #007bff;
+}
+
+/* Course Category Menu Styles (from previous explanation) */
+
 .course-categories {
   margin-bottom: 20px;
 }
@@ -131,6 +132,7 @@ body {
 }
 
 /* Course Progress Styles */
+
 .course-progress {
   list-style: none;
   padding: 0;
