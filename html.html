@@ -57,6 +57,64 @@
         <h3>Write and Run HTML Code (Code Editor Placeholder)</h3>
       </div>
 
+      <h3>Images (Lesson 4)</h3>
+      <p>The `<img>` element embeds an image into a web page. Here are some important attributes to use with images:</p>
+
+      <ul>
+        <li>**src (source):** This attribute specifies the path to the image file. For example:
+          <pre class="code-snippet">
+            &lt;img src="images/my-image.jpg" alt="My Image Description"&gt;
+          </pre>
+        </li>
+        <li>**alt (alternative text):** This attribute provides alternative text for the image, which is displayed if the image cannot be loaded or for screen readers. It's important for accessibility.
+          <pre class="code-snippet">
+            &lt;img src="images/my-image.jpg" alt="A cute cat playing with a ball of yarn"&gt;
+          </pre>
+        </li>
+        <li>**width & height:** These attributes define the width and height of the image in pixels. However, it's generally recommended to use CSS for image sizing for better responsiveness.</li>
+      </ul>
+
+      <h3>Lists (Lesson 5)</h3>
+      <p>HTML provides two main types of lists: ordered lists and unordered lists.</p>
+
+      <h4>Ordered Lists (&lt;ol&gt;)</h4>
+      <p>Ordered lists display items in a specific sequence, typically numbered. Use the `&lt;ol&gt;` element to create an ordered list and `&lt;li&gt;` (list item) for each item in the list. By default, the list items are numbered consecutively. You can also customize the numbering style using the `type` attribute (e.g., "I", "a", "i").</p>
+
+      <pre class="code-snippet">
+        &lt;ol&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+      </pre>
+
+      <h4>Unordered Lists (&lt;ul&gt;)</h4>
+      <p>Unordered lists display items in a non-sequential order, typically marked with bullets. Use the `&lt;ul&gt;` element to create an unordered list and `&lt;li&gt;` for each item. The bullet style can be customized with CSS.</p>
+
+      <h3>Tables (Lesson 6)</h3>
+      <p>Tables are used to organize data in a row-column format. Here's a breakdown of the basic table structure:</p>
+
+      <ul>
+        <li>**&lt;table&gt;:** This element defines the entire table.</li>
+        <li>**&lt;tr&gt; (table row):** This element defines a row within the table. Each row contains data cells.</li>
+        <li>**&lt;td&gt; (table data):** This element defines an individual data cell within a table row.</li>
+      </ul>
+
+      <p>Here's a simple example of a table with two rows and two columns:</p>
+      <pre class="code-snippet">
+        &lt;table&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Fruit&lt;/td&gt;
+            &lt;td&gt;Color&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Apple&lt;/td&gt;
+            &lt;td&gt;Red&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      </pre>
+
+
       <h3>Test Your Knowledge (Quiz 1)</h3>
       <ul class="quiz">
         <li>
