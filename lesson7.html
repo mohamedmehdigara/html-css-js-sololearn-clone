@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnToCode - Lesson 7: Forms</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <header>
+    <h1>LearnToCode</h1>
+    </header>
+
+  <main>
+    <h2>Lesson 7: Forms</h2>
+    <p>This lesson covers forms, a fundamental way to collect user input on webpages.</p>
+
+    <section class="content">
+      <h3>Understanding Forms</h3>
+      <p>Forms allow users to interact with your webpage by entering information. This information can be anything from text and email addresses to choices made through radio buttons or checkboxes.</p>
+
+      <h3>Basic Form Elements</h3>
+      <ul>
+        <li>**&lt;input&gt;:** This element is the core of form building. It has various types for different input needs:
+          <ul>
+            <li>**text:** For single-line text input (e.g., name, username)</li>
+            <li>**email:** For email addresses</li>
+            <li>**password:** For passwords (characters are masked for security)</li>
+            <li>**checkbox:** For selecting one or more options</li>
+            <li>**radio:** For selecting only one option from a group</li>
+          </ul>
+        </li>
+        <li>**&lt;textarea&gt;:** This element creates a multi-line text input field for longer content like messages or descriptions.</li>
+        <li>**&lt;button&gt;:** This element creates a button that submits the form data when clicked.</li>
+      </ul>
+
+      <h3>Example Form</h3>
+      <p>Here's a simple example of a contact form using these elements:</p>
+      <pre class="code-snippet">
+        &lt;form&gt;
+          &lt;label for="name"&gt;Your Name:&lt;/label&gt;
+          &lt;input type="text" id="name" name="name" required&gt;
+          &lt;br&gt;
+          &lt;label for="email"&gt;Your Email:&lt;/label&gt;
+          &lt;input type="email" id="email" name="email" required&gt;
+          &lt;br&gt;
+          &lt;label&gt;Feedback:&lt;/label&gt;
+          &lt;textarea id="feedback" name="feedback" rows="5" cols="30"&gt;&lt;/textarea&gt;
+          &lt;br&gt;
+          &lt;button type="submit"&gt;Send Feedback&lt;/button&gt;
+        &lt;/form&gt;
+      </pre>
+
+      <p>**Note:** The `required` attribute ensures users fill in mandatory fields before submitting the form.</p>
+
+      <h3>Form Submission (Brief Overview)</h3>
+      <p>When a user submits a form, the data is sent to the server for processing. This typically involves server-side scripting languages like PHP, Python, or Node.js. However, in this lesson, we'll focus on building the HTML form itself.</p>
+    </section>
+  </main>
+
+  <footer>
+    </footer>
+</body>
+</html>
